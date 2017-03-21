@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@mixin image($filepath, $color: transparent) {
+    background-color: $color;
+    background-image: url($filepath);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin cover($filepath, $color: transparent) {
+    @include image($filepath, $color);
+
+    background-size: cover;
+}
+@mixin cover_bordered_tb($filepath, $borderTopPath, $borderBottomPath, $color: transparent ) {
+    background-color: $color;
+    background-image: url($borderTopPath), url($borderBottomPath), url($filepath);
+    background-position: left top, left bottom, center center;
+    background-size: auto, auto, cover;
+    background-repeat: repeat-x, repeat-x, no-repeat;
+}
+
+@mixin texture($filepath, $color: transparent) {
+    background-color: $color;
+    background-image: url($filepath);
+    background-position: left top;
+    background-repeat: repeat;
+}
+

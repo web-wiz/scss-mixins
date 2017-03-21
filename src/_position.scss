@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@mixin ltw( $left, $top, $width: auto ) {
+    left: $left;
+    top: $top;
+    width: $width;
+}

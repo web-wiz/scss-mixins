@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@mixin columns() {
+    font-size: 0;
+    text-align: center;
+
+    & > div, & > a {
+        display: inline-block;
+        font-size: $font_size_base;
+        vertical-align: top;
+    }
+}
+@mixin column( $width: 460px, $right: 60px ) {
+    margin: 0 $right 0 0;
+    width: $width;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
