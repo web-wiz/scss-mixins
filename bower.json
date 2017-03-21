@@ -1,0 +1,20 @@
+{
+  "name": "scss-mixins",
+  "homepage": "https://github.com/web-wiz/scss-mixins",
+  "description": "",
+  "main": "dist/_mixins.scss",
+  "keywords": [
+    "scss",
+    "sass",
+    "mixins"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
